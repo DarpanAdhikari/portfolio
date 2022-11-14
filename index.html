@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="js/bootstrap.min.js">
+  <script src="js/jquery.min.js"></script>
+  <title>Darpan Adhikari</title>
+  <style>
+    body, h1,h2,h3,h4,h5,h6,p {font-family: cursive;}
+body{
+  background-color: #111;
+  color: lightblue;
+}
+p{
+  font-size: 20px;
+}
+  .navbar-nav {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-radius: 5px;
+  }
+  .content {
+    font-size: 28px; /* Increased text to enable scrolling */
+   position: relative;
+   margin-left: 150px;
+  }
+  @media screen and (max-width:750px) {
+    body{
+      width: 95%;
+      font-size: 5px;
+    }
+    .navbar-nav {
+    font-size: 10px;
+  }
+  .social .fa{
+    font-size: 20px;
+  }
+    .navbar-nav {
+          width: 100px;
+    }
+  }
+    .navbar-nav .fa {
+    font-size: 50px;
+  }
+  
+  .navbar-nav a {
+    padding: 20px 12px 20px 16px;
+    margin-left: 7%;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    text-align: center;
+  }
+  
+  .navbar-nav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .skills {
+    width: 80%;
+    background-color: #ddd;
+    }
+  .skill {
+    text-align: right;
+    padding-top: 0;
+    padding-bottom: 10px;
+    color: white;
+    height: 20px;
+    font-size: 15px;
+  }
+  .photography {width: 60%; background-color: #808080;}  
+  .Videography {width: 50%; background-color: #808080;}  
+  .web-desing {width: 80%; background-color: #808080;}  
+  .photoshop {width: 70%; background-color: #808080;}  
+ 
+ #myphotos {
+  margin-top: 10%;
+ }
+ #myphotos img {
+  background: white;
+  border: 10px solid transparent;
+ }
+ .fa-youtube {
+  background:  #cb2027;
+  font-size: 50px;
+  border-radius: 10px;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  font-size: 50px;
+  border-radius: 10px;
+  color: white;
+}
+.fa-instagram {
+  background: #bb0000;
+  font-size: 50px;  
+  border-radius: 10px;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  font-size: 50px;
+  border-radius: 10px;
+  color: white;
+}
+
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm">
+    <ul class="navbar-nav flex-column" role="tablist" id="mynavbar">
+       <img src="darpan.png" alt="logo" style="opacity: 0.4; border-radius:20px; width:100%;">
+        <li class="nav-item">
+            <a href="#home" class="nav-link" data-bs-toggle="tab"><span class="fa fa-fw fa-home"></span><br> HOME</a>
+        </li>
+        <li>
+            <a href="#about"  class="nav-link" data-bs-toggle="tab"><span class="fa fa-fw fa-user"></span><br> ABOUT</a>
+        </li>
+        <li>
+            <a href="#myphotos" class="nav-link" data-bs-toggle="tab"><span class="fa fa-fw fa-eye"></span><br> PHOTO</a>
+        </li>
+        <li>
+            <a href="#contact" class="nav-link" data-bs-toggle="tab"><span class="fa fa-fw fa-envelope"></span><br> CONTACT</a>
+        </li>
+    </ul>
+</nav>
+<div class="content">
+    <div id="home" >
+        <h1 class="text-center text-white">I'm Darpan Adhikari.</h1>
+        <p class="text-center text-white">Editor and Web Designer</p>
+        <img class="img-fluid" src="darpan.png" alt="Mypic" width="926" height="800px" style="opacity: 0.3; margin-left:10%; margin-bottom:12px; overflow:hidden;">
+    </div>
+    <div id="about">
+        <h1 class="text-muted">My Introduction</h1> 
+        <hr width="300px">
+        <p clas>Myself Darpan Adhikari. And i'm <b>BSc.CS & IT</b> student at Banke Bageshwori College Nepalgunj.
+           I'm from Nepal and Nepal is developing country.
+            So, we have not that much facilities or opportunity to work online. 
+            I'm intrested in web development as well as photo editing. And i have few expreince in video editing. 
+            I think in future we will do our must of work with the help of internet. 
+            And our IT field will be benificial. <br> If we descuss about my expreince, once i was part of transperfect(one of freelancing job) member. 
+            But i'm waiting for Web development related work. It doesn't mean i won't do other job, because i believe "there is no small work".
+           So, i  would be faithfull if i got any type of job that should workable.</p>
+        <h2 class="text-muted">My Skills</h2>
+               <p>Photography</p>
+               <div class="skills">
+               <div class="skill photography">60%</div>
+              </div>
+              <p>Videography</p>
+               <div class="skills">
+               <div class="skill Videography">50%</div>
+              </div>
+              <p>Web Design</p>
+               <div class="skills">
+               <div class="skill web-desing">80%</div>
+              </div>
+              <p>Photoshop</p>
+               <div class="skills">
+               <div class="skill photoshop">70%</div>
+              </div> <br>
+    <a href="cv.jpg" target="_blank"> <button class="btn bg-white" style="overflow: hidden;">
+      <i class="fa fa-download"></i> View Resume
+    </button></a>
+    </div> <br>
+
+  <div id="myphotos">
+    <h1 class="text-muted">My Photos</h1>
+    <hr width="300px">
+    <img class="img-fluid" src="firsy.jpg" alt="Darpan Image" width="350" height="400">
+    <img class="img-fluid" src="selfie.jpg" alt="Darpan Image" width="350" height="500">
+    <img class="img-fluid" src="fourth.jpg" alt="Darpan Image" width="350" height="400">
+    <img class="img-fluid" src="second.jpg" alt="Darpan Image" width="350" height="400">
+    <img class="img-fluid" src="291466381_793032648745242_8361602379915706816_n.jpg" alt="Darpan Image" width="350" height="400">
+  </div>
+<br>
+  <div id="contact">
+    <h1 class="text-muted">Contact Me</h1>
+    <hr width="300px">
+    <h4><i class="fa fa-fw fa-map-marker text-white"></i> kohalpur-06,Banke,Nepal</h4>
+    <h4><i class="fa fa-fw fa-phone"></i>Phone: ........</h4>
+    <h4><i class="fa fa-fw fa-envelope"></i>Email: Darpand263@gmail.com</h4>
+    <br>
+    <p class="text-muted">Let's get in touch. Send me a message:</p>
+  </div>
+  <form class="form-container" action="" style="margin-bottom: 10%;">
+      <div class="col-md-11">
+        <p class="text-warning text-center w-75 bg-danger not-avilable" style="display: none;">Sorry currently message system is not available please try to connect on social media.</p>
+           <div class="col-md-7">
+            <label for="full-name">Full Name:</label>
+           <input type="text" class="form-control" name="full-name" placeholder="Full Name....">
+           <label for="email">Email:</label>
+            <input type="email" class="form-control" name="email" placeholder="example123@gmail.com" >
+            <label for="subject">Subject:</label>
+            <input type="text" class="form-control" name="subject" placeholder="Subject..." >
+           </div>
+               <div class="col-md-9">
+                 <label for="message">Message:</label>
+               <textarea name="message" class="form-control" id="message" placeholder="Leave message for me..." cols="30" rows="5" style="resize: none;"></textarea>
+               <p style="float: right;" id="count"></p>
+              </div>
+              <button class="btn btn-secondary" id="message" type="submit"><i class="fa fa-paper-plane"></i>Send Message</button>
+      </div>
+    </form> <hr>
+<div class="social">
+    <nav class="navbar navbar-expand-sm">
+        <ul class="nav" id="social-icon" style="margin-left: 20%; margin-bottom:2%; gap:10px;">
+            <a href="https://www.facebook.com/datpan.adhikari.1" target="_blank"><li><i class="fa fa-fw fa-facebook text-white"></i></li></a>
+           <a href="https://www.instagram.com/darpandadhikari/" target="_blank"> <li><i class="fa fa-fw fa-instagram text-white"></i></li></a>
+            <a href="" target="_blank"><li><i class="fa fa-fw fa-twitter text-white"></i></li></a>
+            <a href="https://www.youtube.com/channel/UC3aO9DqsvyvIufXQSubbeeA" target="_blank"><li><i class="fa fa-fw fa-youtube text-white"></i></li></a>
+        </ul>
+    </nav>
+</div>
+<p class="text-center text-muted">Copy right reserved <sub>DarpanAdhikari</sub>.</p>
+</div>
+<!-- ---------------------------------------for counting message letter--------------------- -->
+<script>
+    var mytext = document.getElementById('message');
+    var result = document.getElementById('count');
+    result.textContent = 0;
+    mytext.addEventListener('input',function(){
+        var textlength = mytext.value.length;
+result.textContent = textlength;
+    });
+</script>
+<!-- --------------------------------------------jquery for the hide and show navbar-------------- -->
+<script>
+    $(document).ready(function(){
+        $('.close-navbar').on('click',function(){
+            $('.navbar-nav').toggle();
+            $('.navbar-nav').toggleClass('.nav-after-click');
+        });
+        $('.form-container').mouseover(function(){
+            $('.not-avilable').show();
+        });
+        $('.form-container').mouseout(function(){
+            $('.not-avilable').hide();
+        });
+    });
+</script>
+</body>
+</html>
