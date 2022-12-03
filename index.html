@@ -61,16 +61,19 @@ p{
    position: relative;
    margin-left: 150px;
   }
+    .fa-download:hover {
+  background-color: RoyalBlue;
+}
   @media screen and (max-width:750px) {
     body{
       width: 95%;
       font-size: 5px;
     }
+    .content{
+      margin-left: 90px;
+    }
     .navbar-nav {
     font-size: 10px;
-  }
-  .social .fa{
-    font-size: 20px;
   }
     .navbar-nav {
           width: 100px;
@@ -117,28 +120,42 @@ p{
   background: white;
   border: 10px solid transparent;
  }
- .fa-youtube {
-  background:  #cb2027;
-  font-size: 50px;
-  border-radius: 10px;
-  color: white;
+ .social {
+  position: fixed;
+  top: 50%;
+  right: 1%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-.fa-facebook {
+
+.social a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.social a:hover {
+  background-color: #000;
+}
+
+.facebook {
   background: #3B5998;
-  font-size: 50px;
-  border-radius: 10px;
   color: white;
 }
-.fa-instagram {
-  background: #bb0000;
-  font-size: 50px;  
-  border-radius: 10px;
+.instagram{
+  background: linear-gradient(45deg,yellow,red,yellow,red);
   color: white;
 }
-.fa-twitter {
+.twitter {
   background: #55ACEE;
-  font-size: 50px;
-  border-radius: 10px;
+  color: white;
+}
+.youtube {
+  background: #bb0000;
   color: white;
 }
 
@@ -240,14 +257,10 @@ p{
       </div>
     </form> <hr>
 <div class="social">
-    <nav class="navbar navbar-expand-sm">
-        <ul class="nav" id="social-icon" style="margin-left: 20%; margin-bottom:2%; gap:10px;">
-            <a href="https://www.facebook.com/datpan.adhikari.1" target="_blank"><li><i class="fa fa-fw fa-facebook text-white"></i></li></a>
-           <a href="https://www.instagram.com/darpandadhikari/" target="_blank"> <li><i class="fa fa-fw fa-instagram text-white"></i></li></a>
-            <a href="" target="_blank"><li><i class="fa fa-fw fa-twitter text-white"></i></li></a>
-            <a href="https://www.youtube.com/channel/UC3aO9DqsvyvIufXQSubbeeA" target="_blank"><li><i class="fa fa-fw fa-youtube text-white"></i></li></a>
-        </ul>
-    </nav>
+            <a href="https://www.facebook.com/datpan.adhikari.1" class="facebook" target="_blank"><i class="fa fa-fw fa-facebook text-center text-white"></i></a>
+           <a href="https://www.instagram.com/darpandadhikari/" class="instagram" target="_blank"> <i class="fa fa-fw fa-instagram text-center text-white"></i></a>
+            <a href="" class="twitter" target="_blank"><i class="fa fa-fw fa-twitter text-center text-white"></i></a>
+            <a href="https://www.youtube.com/channel/UC3aO9DqsvyvIufXQSubbeeA" class="youtube" target="_blank"><i class="fa fa-fw fa-youtube text-center text-white"></i></a>
 </div>
 <p class="text-center text-muted">Copy right reserved <sub>DarpanAdhikari</sub>.</p>
 </div>
