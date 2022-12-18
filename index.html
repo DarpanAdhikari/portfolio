@@ -13,19 +13,13 @@
     ::-webkit-scrollbar {
     width: 15px;
   }
-
-/* Track */
   ::-webkit-scrollbar-track {
     background: lightgreen; 
   }
-
-/* Handle */
   ::-webkit-scrollbar-thumb {
     background: gray;
     border-radius: 10px; 
   }
-
-/* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: -webkit-linear-gradient(90deg,yellow,green,blue,lightblue); 
   }
@@ -40,6 +34,10 @@ body{
 }
     ::placeholder {
   color: greenyellow;
+}
+h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 4px;
 }
 p{
   font-size: 20px;
@@ -94,6 +92,25 @@ p{
   .navbar-nav a:hover {
     color: #f1f1f1;
   }
+  .about span{
+  position: relative;
+}
+.about span::after{
+content: "";
+left: 0;
+position: absolute;
+background: #111;
+height: 100%;
+width: 100%;
+border-left:10px solid red;
+animation: typing 2s steps(22) infinite;
+}
+@keyframes typing{
+  100%{
+    left: 100%;
+    margin: 0 -35PX 0 35PX;
+  }
+}
   
   .skills {
     width: 80%;
@@ -183,7 +200,8 @@ p{
 <div class="content">
     <div id="home" >
         <h1 class="text-center text-white" style="letter-spacing: 10px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-transform: uppercase;">I'm Darpan Adhikari.</h1>
-        <p class="text-center text-white" tyle="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; letter-spacing: 7px;">Full Stack Developer and Digital editor</p>
+        <p class="about text-center text-white" tyle="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; letter-spacing: 7px;"><span>Full Stack Developer, Freelancer and Digital editor</span>
+</p>
         <img class="img-fluid" src="darpan.png" alt="Mypic" width="926" height="800px" style="opacity: 0.3; margin-left:10%; margin-bottom:12px; overflow:hidden; -webkit-user-drag: none;">
     </div>
     <div id="about">
@@ -197,7 +215,7 @@ p{
             And our IT field will be benificial. <br> If we descuss about my expreince, once i was part of transperfect(one of freelancing job) member. 
             But i'm waiting for Web development related work. It doesn't mean i won't do other job, because i believe "there is no small work".
            So, i  would be faithfull if i got any type of job that should workable.</p>
-        <h2 class="text-muted ms-3">My Skills</h2> <hr width="300px">
+        <h1 class="text-muted ms-3">My Skills</h1> <hr width="300px">
                <p class="ms-3">Photography</p>
                <div class="skills ms-3">
                <div class="skill photography">60%</div>
