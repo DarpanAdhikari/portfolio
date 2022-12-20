@@ -299,8 +299,15 @@ result.textContent = textlength;
     });
 </script>
   <script>
-  const x = new Date;
-  document.getElementById("date").innerHTML = x.getFullYear();
+   const x = new Date;
+  document.getElementById("date").innerText = x.getFullYear();
+  var typed = new Typed(".intro",{
+    strings : ['Freelancer','Full Stack Developer','Digital editor'],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop : true
+
+  });
 </script>
 </body>
 </html>
